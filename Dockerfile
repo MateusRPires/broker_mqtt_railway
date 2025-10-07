@@ -4,7 +4,7 @@ FROM eclipse-mosquitto:2.0
 RUN mkdir -p /mosquitto/data /mosquitto/log \
     && chown -R mosquitto:mosquitto /mosquitto
 
-# Copia configuração customizada
+# Copiar configuração customizada
 COPY mosquitto.conf /mosquitto/config/mosquitto.conf
 
 # Expor porta MQTT
